@@ -1,0 +1,17 @@
+{
+    "applinks":
+    {
+        "apps":
+        [],
+        "details":
+        [
+            {
+                "appID": "92SN2U4LQQ.com.ivalex.radddio",
+                "paths":
+                [
+                    "*"
+                ]
+            }
+        ]
+    }
+}
