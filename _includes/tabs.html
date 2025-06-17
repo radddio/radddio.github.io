@@ -1,0 +1,15 @@
+<ul class="navbar-nav flex-row flex-wrap bd-navbar-nav gap-2 justify-content-center my-4">
+    {% if page.url == "/popular/" %}
+    <li><a href="/popular/"><span class="badge text-primary bg-white border rounded-3 border-primary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-stars pe-2"></i>Popular</span></a></li>
+    {% else %}
+    <li><a href="/popular/"><span class="badge text-primary-emphasis border rounded-3 border-secondary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-stars pe-2"></i>Popular</span></a></li>
+    {% endif %} {% if page.url == "/genres/" %}
+    <li><a href="/genres/"><span class="badge text-primary bg-white border rounded-3 border-primary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-music-note pe-2"></i>Genres</span></a></li>
+    {% else %}
+    <li><a href="/genres/"><span class="badge text-primary-emphasis border rounded-3 border-secondary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-music-note pe-2"></i>Genres</span></a></li>
+    {% endif %} {% if page.url == "/countries/" %}
+    <li><a href="/countries/"><span class="badge text-primary bg-white border rounded-3 border-primary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-globe pe-2"></i>Countries</span></a></li>
+    {% else %}
+    <li><a href="/countries/"><span class="badge text-primary-emphasis border rounded-3 border-secondary-subtle px-3 py-2 fs-6 tab-cell"><i class="bi bi-globe pe-2"></i>Countries</span></a></li>
+    {% endif %}
+</ul>

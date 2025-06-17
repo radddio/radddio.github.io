@@ -1,0 +1,81 @@
+<div class="position-relative overflow-hidden pb-0 pt-6 pt-lg-8">
+  <div class="container position-relative mt-5">
+    <div class="row g-4 justify-content-between">
+      <!-- Widget 1 START -->
+      <div class="col-lg-4">
+        <!-- logo -->
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+          <img
+            src="/assets/img/radddio-app-icon.png"
+            width="32"
+            class="me-2 rounded-3 border border-light-subtle"
+            alt="radddio app icon" />
+          <span class="fw-bold fs-4">{{ site.title }}</span>
+        </a>
+        <p class="mt-4 mb-2">
+          Easily listen to thousands of radio stations from around the world without sign-ups or restrictions. Search, play, and enjoy your favorite music in seconds.
+        </p>
+      </div>
+      <!-- Widget 1 END -->
+      <!-- Widget 2 START -->
+      <div class="col-lg-8 col-xxl-7">
+        <div class="row g-4">
+          <!-- Link block -->
+          {% for item in site.data.footer.data %}
+          <div class="col-6 col-md-4">
+            <h6 class="mb-2 mb-md-3 fw-semibold">{{ item.name }}</h6>
+            <ul class="list-unstyled mb-0 py-3 py-lg-2">
+              {% for link in item.links.option %}
+              <li class="mb-2">
+                <a
+                  href="{{ link.url }}"
+                  class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-50-hover">
+                  {{ link.name }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+          <!-- Link block -->
+          <div class="col-md-4">
+            <h6 class="mb-2 mb-md-4 fw-semibold">App available on</h6>
+            <div class="row g-2 mt-2 mb-4 mb-sm-4">
+              <!-- App store button -->
+              <div class="col-5 col-sm-4 col-md-6 my-md-1 p-0">
+                {%- include element-appstore-badge.html -%}
+              </div>
+            </div>
+            <!-- Social buttons -->
+            <h6 class="mb-2 mb-md-3 fw-semibold">Follow on</h6>
+            <ul class="list-inline mb-0">
+              {% for item in site.data.footer.social %} {% for link in
+              item.links.option %}
+              <li class="list-inline-item">
+                <a
+                  class="btn btn-xs btn-icon btn-light border-0"
+                  href="{{ link.url }}"
+                  target="_blank"
+                  rel="noopener">
+                  <i class="bi {{ link.image }}"></i></a>
+              </li>
+              {% endfor %} {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Widget 2 END -->
+    </div>
+    <!-- Divider -->
+    <hr class="mt-4 mb-0" />
+    <div
+      class="d-md-flex justify-content-between align-items-center text-center text-lg-start py-4">
+      <!-- copyright text -->
+      <div class="text-body small text-body-secondary">
+        {{ site.data.footer.copyright }}
+      </div>
+    </div>
+  </div>
+</div>

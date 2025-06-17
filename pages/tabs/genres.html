@@ -1,0 +1,27 @@
+---
+layout: default
+title: Genres
+description: Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world.
+category: "genres"
+permalink: /genres/
+---
+{%- include header.html
+    title = "Genres" 
+    subtitle = "Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world." 
+-%}
+
+{%- include tabs.html -%}
+
+{% assign genres = site.data.genres %}
+{% assign genrenames = site.data.genres-list %}
+
+<ul class="list-unstyled px-5">
+  {% for genre in genres %}
+  {% assign genrename = genrenames %}
+    <li>
+      <a class="d-block text-decoration-none" href="/genres/{{ genre[0] }}/">
+        {{  genrename.name }} <span class="text-muted small">({{ genre[1].size }})</span>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

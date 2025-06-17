@@ -1,0 +1,15 @@
+{
+    "name": "helper",
+    "version": "1.0.0",
+    "description": "useful",
+    "scripts": {
+      "dev": "bundle exec jekyll serve --livereload --trace",
+      "push": "git add . -A && git commit -a -m 'up to date' && git push",
+      "fetch-stations": "ruby fetch_stations.rb",
+      "generate-popular-stations": "ruby generate-popular-stations.rb",
+      "generate-genre-page": "ruby generate-genre-page.rb",
+      "generate-genre-stations": "ruby generate-genre-stations.rb",
+      "generate-country-page": "ruby generate-country-page.rb",
+      "generate-country-stations": "ruby generate-country-stations.rb"
+    }
+  }

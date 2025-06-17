@@ -1,0 +1,5 @@
+<div>genres</div>
+{% assign stations = site.data.genres[page.slug] %}
+{% for station in stations %}
+  <a href="/genres/{{ page.slug }}/{{ station.name | slugify }}/">{{ station.name }}</a>
+{% endfor %}

@@ -1,0 +1,18 @@
+{% assign stations = site.data.genres[page.genre_slug] %}
+<div class="row mx-auto align-items-md-stretch bg-white rounded-3 mb-4">
+  <div class="col-lg-8 mx-auto px-lg-0 py-md-0 p-4 pb-md-3 text-md-center pt-md-5">
+      <h1 class="display-5 fw-bold lh-sm">Listen {{ page.title | split: " " | map: "capitalize" | join: " " }} Radio Stations Online</h1>
+      <p class="lead fw-normal text-body-secondary">Listen to the best {{ page.title }} radio stations online. Discover top {{ page.title }} content streaming live from around the world.</p>
+  </div>
+</div>
+{% if stations %}
+<ul class="list-unstyled px-5">
+  {% for station in stations %}
+  <li>
+    {% include station-card.html %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+  <p>No stations found for this genre.</p>
+{% endif %}

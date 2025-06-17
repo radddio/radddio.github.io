@@ -1,0 +1,244 @@
+.border-dashed {
+  --bs-border-style: dashed;
+}
+
+.download-btn-icon {
+  background-color: transparent;
+  border: 0;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.download-btn-icon:hover {
+  opacity: 0.8;
+}
+
+.btn-success-bright {
+  background-color: #02b02e;
+  border-color: #029e29;
+}
+
+.btn-danger-bright {
+  background-color: #ff3b30;
+  border-color: #e6352b;
+}
+
+.bd-callout-warning {
+  --bd-callout-color: var(--bs-warning-text-emphasis);
+  --bd-callout-bg: var(--bs-warning-bg-subtle);
+  --bd-callout-border: var(--bs-warning-border-subtle);
+}
+
+.bd-callout {
+  --bs-link-color-rgb: var(--bd-callout-link);
+  --bs-code-color: var(--bd-callout-code-color);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--bd-callout-color, inherit);
+  background-color: var(--bd-callout-bg, var(--bs-gray-100));
+  border-left: 0.25rem solid var(--bd-callout-border, var(--bs-gray-300));
+}
+
+.bd-callout-info {
+  --bd-callout-color: var(--bs-info-text-emphasis);
+  --bd-callout-bg: var(--bs-info-bg-subtle);
+  --bd-callout-border: var(--bs-info-border-subtle);
+}
+
+.icon-lg {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth transitions */
+.hover-card {
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Image zoom effect */
+.hover-card:hover .hover-zoom {
+  transform: scale(1.05);
+}
+
+/* Smooth transition for the image */
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+}
+
+/* Stretched link for full card */
+.stretched-link {
+  position: absolute;
+  inset: 0; /* Covers the whole card */
+  z-index: 3;
+}
+
+/* Stretched link for image */
+.stretched-link-image {
+  position: absolute;
+  inset: 0; /* Covers the image area */
+  z-index: 3;
+}
+
+/* Ensure text is above the stretched link */
+.card-body {
+  position: relative;
+  z-index: 4;
+}
+
+/* 🔥 Fix: Animate the arrow when the entire card is hovered */
+.hover-card:hover .arrow-icon {
+  transform: translateX(5px); /* Moves the arrow to the right */
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container {
+  width: 100%;
+  height: 400px;
+}
+
+.tilted-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover; /* Crops image while maintaining aspect ratio */
+}
+
+/* Left card image (tilted left) */
+.tilted-image-left {
+  width: 180%; /* Scale up the image */
+  transform: rotate(-10deg); /* Tilt left */
+  position: absolute;
+  top: 10px;
+  left: 25%; /* Move right */
+}
+
+/* Center card image (not rotated, just hidden) */
+.center-image {
+  width: 120%;
+  top: 0;
+  left: 0;
+}
+
+/* Right card image (tilted right) */
+.tilted-image-right {
+  width: 120%;
+  transform: rotate(15deg); /* Reverse tilt */
+  position: absolute;
+  top: 10px;
+  left: -10%; /* Move left */
+}
+
+.changelog-header a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Default State */
+.link-icon {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 1.2rem;
+}
+
+/* On Hover: Show Icon + Change Background */
+.changelog-header a:hover {
+  background-color: #f8f9fa; /* Light blue */
+}
+
+.changelog-header a:hover .link-icon {
+  opacity: 1;
+}
+
+/* / */
+.changelog-timeline {
+  position: relative;
+  padding-left: -10px;
+  border-left: 2px solid #dee2e6; /* Timeline line */
+}
+
+.changelog-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #6c757d;
+  position: relative;
+  left: -8px; /* Slightly move the date to align better */
+}
+
+.timeline-marker {
+  width: 14px; /* Outer circle size */
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #0d6efd; /* Outer ring color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: 16px;
+  background-color: #0d6efd; /* Background to match container */
+  box-shadow: inset 0 0 0 5px rgb(255, 255, 255); /* Inner border */
+  box-shadow: 0 0 0 5px rgb(255, 255, 255); /* Outer ring */
+}
+
+.changelog-entry {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.changelog-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-left: 20px; /* Indent cards from the timeline */
+}
+
+.bg-pattern {
+  position: relative;
+}
+
+.bg-pattern:after {
+  background-image: url(/assets/img/pattern-square.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: var(--bs-border-radius-lg) !important;
+  bottom: 0;
+  content: '';
+  left: 0;
+  -webkit-mask-image: linear-gradient(0deg, transparent 55%, #000 75%);
+  mask-image: linear-gradient(0deg, transparent 55%, #000 75%);
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.station-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.station-icon-large {
+  width: 180px;
+  height: 180px;
+}
+
+.tab-cell {
+  transition: all 0.3s ease; /* smooth animation */
+}
+
+.tab-cell:hover {
+  background-color: #fff;
+  border-color: #87b2f1 !important;
+  color: var(--bs-primary-rgb) !important;
+}

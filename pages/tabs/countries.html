@@ -1,0 +1,24 @@
+---
+layout: default
+title: Countries
+description: Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world.
+category: "countries"
+permalink: /countries/
+---
+{%- include header.html
+    title = "Countries" 
+    subtitle = "Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world." 
+-%}
+
+{%- include tabs.html -%}
+
+{% assign countries = site.data.countries-list %}
+<ul>
+  {% for country in countries %}
+    <li>
+      <a href="/countries/{{ country.name | slugify }}/">
+        {{ country.name }} ({{ country.stationcount }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>

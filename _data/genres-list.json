@@ -1,0 +1,42 @@
+[
+  {
+    "name": "pop",
+    "stationcount": 5169
+  },
+  {
+    "name": "music",
+    "stationcount": 4242
+  },
+  {
+    "name": "news",
+    "stationcount": 2769
+  },
+  {
+    "name": "rock",
+    "stationcount": 2674
+  },
+  {
+    "name": "classical",
+    "stationcount": 1626
+  },
+  {
+    "name": "talk",
+    "stationcount": 1448
+  },
+  {
+    "name": "entretenimiento",
+    "stationcount": 1410
+  },
+  {
+    "name": "radio",
+    "stationcount": 1408
+  },
+  {
+    "name": "hits",
+    "stationcount": 1322
+  },
+  {
+    "name": "estación",
+    "stationcount": 1288
+  }
+]

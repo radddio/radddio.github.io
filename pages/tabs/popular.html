@@ -1,0 +1,22 @@
+---
+layout: default
+title: Popular
+description: Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world.
+category: "popular"
+permalink: /popular/
+---
+{%- include header.html
+    title = "Popular" 
+    subtitle = "Radddio is your all-in-one radio streaming app, offering access to thousands of live radio stations from around the world." 
+-%}
+
+{%- include tabs.html -%}
+
+{% assign stations = site.data.popular-list %}
+<ul class="list-unstyled px-5">
+  {% for station in stations %}
+  <li>
+    {% include station-card.html %}
+  </li>
+  {% endfor %}
+</ul>

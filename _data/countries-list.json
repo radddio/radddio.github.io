@@ -1,0 +1,27 @@
+[
+  {
+    "name": "The United States Of America",
+    "iso_3166_1": "US",
+    "stationcount": 6951
+  },
+  {
+    "name": "Germany",
+    "iso_3166_1": "DE",
+    "stationcount": 5457
+  },
+  {
+    "name": "The Russian Federation",
+    "iso_3166_1": "RU",
+    "stationcount": 3175
+  },
+  {
+    "name": "France",
+    "iso_3166_1": "FR",
+    "stationcount": 2524
+  },
+  {
+    "name": "Greece",
+    "iso_3166_1": "GR",
+    "stationcount": 2002
+  }
+]

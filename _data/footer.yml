@@ -1,0 +1,32 @@
+data:
+  - name: Quick links
+    links:
+      option:
+        - name: Contact
+          url: /contact/
+  - name: Resources
+    links:
+      option:
+        - name: Privacy Policy
+          url: /privacy-policy/
+        - name: Terms of Service
+          url: /terms-of-service/
+
+social:
+  - social: Follow on
+    links:
+      option:
+        - name: Twitter
+          url: https://www.x.com/qrfiletransfer/
+          image: bi-twitter-x
+        - name: Instagram
+          url: https://www.instagram.com/qrfiletransfer/
+          image: bi-instagram
+        - name: YouTube
+          url: https://www.youtube.com/@qrfiletransfer/
+          image: bi-youtube
+
+url: https://radddio.github.io/
+copyright: © Radddio - FM Radio Online.
+message: All rights reserved.
+logo: /assets/radddio-app-icon.png
